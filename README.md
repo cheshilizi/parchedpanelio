@@ -1,4 +1,4 @@
-# os-info-ef3560
+# os-info-e7f8a4
 
 A Rust os-info utility.
 
